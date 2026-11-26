@@ -1,0 +1,41 @@
+{
+  "overlap": {
+    "seconds": 88.6,
+    "n_train": 392702,
+    "iterations": 294,
+    "test_300": {
+      "accuracy": 0.4867,
+      "f1_macro": 0.4872
+    },
+    "eval_full": {
+      "accuracy": 0.5067,
+      "f1_macro": 0.5038
+    }
+  },
+  "hypothesis": {
+    "seconds": 108.8,
+    "n_train": 392702,
+    "iterations": 236,
+    "test_300": {
+      "accuracy": 0.5667,
+      "f1_macro": 0.567
+    },
+    "eval_full": {
+      "accuracy": 0.5549,
+      "f1_macro": 0.5549
+    }
+  },
+  "combined": {
+    "seconds": 115.8,
+    "n_train": 392702,
+    "iterations": 354,
+    "test_300": {
+      "accuracy": 0.5533,
+      "f1_macro": 0.5526
+    },
+    "eval_full": {
+      "accuracy": 0.5801,
+      "f1_macro": 0.5786
+    }
+  }
+}

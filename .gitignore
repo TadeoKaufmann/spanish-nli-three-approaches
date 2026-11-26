@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+
+# XNLI sentences are downloaded locally (CC BY-NC 4.0), not versioned
+data/
+
+# runs you make yourself
+results/predictions/*_rerun*.jsonl
+results/predictions/*_smoke*.jsonl
+*.pt
+*.safetensors
+*.bin

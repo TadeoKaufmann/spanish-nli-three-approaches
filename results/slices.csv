@@ -1,0 +1,6 @@
+slice,n,n_entailment,n_neutral,n_contradiction,Classic,BETO,LLM
+hypothesis has a negation word,70,15,12,43,0.614,0.857,0.9
+no negation word,230,85,88,57,0.448,0.787,0.839
+word overlap: low third,101,23,37,41,0.505,0.812,0.881
+word overlap: middle third,121,41,40,40,0.438,0.769,0.876
+word overlap: high third,78,36,23,19,0.538,0.846,0.782
