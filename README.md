@@ -88,7 +88,7 @@ overlap, number of negation words in each sentence, length difference and length
 128 tokens, 6 % warmup, early stopping with patience 3 on the held-out 2,000 pairs (best epoch 2 of 5, 0.809).
 
 **LLM.** Claude Haiku, zero-shot, the 300 pairs without labels in 10 batches of 30. A first attempt with all 300 in a
-single batch drifted to answering "neutral" most of the time (about 0.36 accuracy; those outputs were not kept).
+single batch drifted to answering "neutral" most of the time (about 0.36 accuracy; I did not keep those outputs).
 
 ## Reproducing
 
@@ -109,8 +109,8 @@ What can be reproduced:
 |---|---|
 | 300-pair sample | rebuilt from the Hugging Face copy of XNLI, identical to the original, field by field |
 | Classical approach | re-run: all 300 predictions identical to the original ones (scikit-learn 1.9.0) |
-| BETO predictions | taken from a full run done for a separate project; the checkpoint is not included. `train_beto.py` is a cleaned-up script with the same configuration, checked only with a tiny smoke run, **not** retrained in full |
-| LLM predictions | saved outputs only. The exact prompt and model version were not recorded, so this arm cannot be re-run identically |
+| BETO predictions | taken from a full run I did for a separate project; the checkpoint is not included. `train_beto.py` is a cleaned-up script with the same configuration, checked only with a tiny smoke run, **not** retrained in full |
+| LLM predictions | saved outputs only. I did not record the exact prompt or model version, so this arm cannot be re-run identically |
 | Metrics, intervals, tests, figures | regenerated from the saved predictions by `analyze.py` |
 
 ## Limitations
@@ -130,7 +130,7 @@ figures/     plots made by scripts/analyze.py
 tests/       unit tests
 ```
 
-## Author
+## Background
 
-Tadeo Kaufmann. Built for a Natural Language Processing course at the University of Buenos Aires; the added probes,
-statistical tests and this write-up came afterwards.
+I built this for a Natural Language Processing course at the University of Buenos Aires. I added the probes, the
+statistical tests and this write-up afterwards.
